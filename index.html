@@ -167,11 +167,15 @@
         <main>
             <div class="card">
                 <h1 class="page-title">Privacy Policy</h1>
-                <p class="effective-date">Effective date: October 30, 2026</p>
+                <p class="effective-date">Effective date: November 17, 2026</p>
 
                 <div class="highlight-box">
-                    GPX Utils does not collect, store, or transmit any personal
-                    data. Your files and your location stay on your devices.
+                    GPX Utils has no account and collects no personal data for
+                    itself. Your files, your location, and your Health data
+                    stay on your devices and in your iCloud Drive. The one
+                    exception is Live Share: while you share, your location and
+                    the track you follow are sent to the app's server so that
+                    people with the link can see them.
                 </div>
 
                 <section>
@@ -180,18 +184,22 @@
                         GPX Utils opens GPX files on iPhone, iPad, and Mac. It
                         shows tracks and waypoints on a map, shows elevation
                         profiles, lets you add and edit waypoints, and lets you
-                        follow a track with on-track and off-track status. All
-                        file reading, editing, and track calculations happen on
-                        your device.
+                        follow a track with on-track and off-track status. It
+                        can import a route from a Google Maps link and, on
+                        iPhone and iPad, workouts from Apple Health, and it can
+                        share your progress with a link while you follow a
+                        track. All file reading, editing, and track
+                        calculations happen on your device.
                     </p>
                 </section>
 
                 <section>
                     <h2>Data We Do Not Collect</h2>
                     <ul>
-                        <li>No location data is sent to us or stored by the app</li>
-                        <li>No GPX files or file contents leave your device</li>
-                        <li>No personal information is collected</li>
+                        <li>No location data leaves your device, except while you use Live Share</li>
+                        <li>No GPX files are uploaded; Live Share sends only the track you follow</li>
+                        <li>No Health data is sent to us or to anyone else</li>
+                        <li>No name, e-mail address, or other contact information is collected</li>
                         <li>No analytics or crash data are sent to us</li>
                         <li>No account or sign-in is required</li>
                         <li>No advertising identifiers are used</li>
@@ -209,8 +217,39 @@
                         on, iPhone and iPad keep receiving location updates with
                         the screen off; iOS shows the location indicator during
                         that time. Location updates stop when you turn Follow
-                        Track off. GPX Utils does not record your location or
-                        write it to your files.
+                        Track off. GPX Utils does not write your location to
+                        your files. Your location leaves your device only while
+                        you use Live Share (see below).
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Apple Health</h2>
+                    <p>
+                        On iPhone and iPad, Import Workout from Health reads
+                        your workouts and their routes from Apple Health. It
+                        reads them only after you allow access, and only while
+                        the Import Workout screen is open. GPX Utils reads the
+                        list of workouts (activity type, date, duration,
+                        distance, and the name of the app that recorded each
+                        one). For the workouts you add, it also reads the route
+                        points (latitude, longitude, altitude, and time) and the
+                        times the workout was paused. GPX Utils writes nothing
+                        to Health.
+                    </p>
+                    <p>
+                        When you tap Add, each workout's route is written into
+                        the GPX document you have open, as a track with a
+                        position, elevation, and time for each point. No heart
+                        rate or other health measurements are written. The
+                        document is saved where you keep it: on your device or
+                        in your iCloud Drive.
+                    </p>
+                    <p>
+                        GPX Utils does not send Health data to us or to anyone
+                        else, and does not use it for advertising or marketing.
+                        You can turn off access in Settings › Health › Data
+                        Access &amp; Devices › GPX Utils.
                     </p>
                 </section>
 
@@ -232,8 +271,85 @@
                         map images, your device requests them from Apple. These
                         requests are handled under
                         <a href="https://www.apple.com/legal/privacy/">Apple's
-                        Privacy Policy</a>. GPX Utils does not send your tracks,
-                        waypoints, or location to Apple or to anyone else.
+                        Privacy Policy</a>. Apart from Import Route and Live
+                        Share, described below, GPX Utils does not send your
+                        tracks, waypoints, or location to Apple or to anyone
+                        else.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Import Route from Google Maps</h2>
+                    <p>
+                        When you paste a Google Maps directions link, GPX Utils
+                        reads it on your device. A short link
+                        (maps.app.goo.gl) is opened with one request to Google
+                        to get the full link; Google's privacy policy applies
+                        to that request. To find stops that the link names
+                        without coordinates, and to calculate the route, GPX
+                        Utils sends the stops' names or coordinates to Apple
+                        Maps. The resulting track is saved only in your
+                        document.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Live Share (iPhone and iPad)</h2>
+                    <p>
+                        Live Share is optional and off until you start it.
+                        While you share, the app sends your precise location
+                        and related data to the app's server so that people you
+                        give the link to can follow you on a web page.
+                    </p>
+                    <p>
+                        <strong>What is sent.</strong> When you start a share:
+                        the name of the track you follow, its route (points
+                        with elevation), and the waypoints on it. While you
+                        share, about once a minute, and at once when your
+                        status changes: your location and the path you walked
+                        (latitude, longitude, elevation, accuracy, and time of
+                        each point), your status on the track (on track, off
+                        track, or locating, with the distance to the next
+                        waypoint or back to the track), your distance along the
+                        track, your pace, and your battery level. Your location
+                        is sent whatever its accuracy.
+                    </p>
+                    <p>
+                        <strong>Who can see it.</strong> Anyone who has the
+                        link. Each share has its own link and a random
+                        identifier. The app has no account, and the data
+                        carries no name, e-mail address, or device identifier.
+                    </p>
+                    <p>
+                        <strong>How long it is kept.</strong> The server
+                        deletes the shared data when you tap Stop Sharing or
+                        Stop Follow Track. If the app cannot reach the server
+                        then, it tries again while it runs. If the app is
+                        closed or the phone loses power while you share, the
+                        server deletes the data 48 hours after the last update.
+                        The server's free hosting plan has daily limits; if
+                        they are used up on the day a deletion is due, the data
+                        is deleted by the next daily cleanup, which runs at
+                        00:30 UTC, so within about one more day.
+                    </p>
+                    <p>
+                        <strong>Where.</strong> The server runs on Cloudflare.
+                        The app does not keep request logs. Cloudflare
+                        processes IP addresses to deliver requests and to apply
+                        rate limits. A person who opens the link views the map
+                        from Apple Maps (MapKit JS); Apple's privacy terms apply
+                        to that map.
+                    </p>
+                    <p>
+                        <strong>Not used for.</strong> Advertising, analytics,
+                        or tracking across other apps and websites. The data is
+                        not sold or shared with anyone but the people who have
+                        the link.
+                    </p>
+                    <p>
+                        <strong>Your control.</strong> Stop Sharing or Stop
+                        Follow Track at any time. Without Live Share, your
+                        location stays on your device.
                     </p>
                 </section>
 
@@ -250,17 +366,20 @@
                 <section>
                     <h2>Third-Party Services</h2>
                     <p>
-                        GPX Utils does not integrate any third-party SDKs,
-                        analytics platforms, advertising networks, or external
-                        services.
+                        GPX Utils includes no third-party SDKs, analytics, or
+                        advertising. It uses Apple services (MapKit, Apple
+                        Health, iCloud Drive, and In-App Purchase), one request
+                        to Google to open a short link in Import Route, and its
+                        own Live Share server, which runs on Cloudflare.
                     </p>
                 </section>
 
                 <section>
                     <h2>Children's Privacy</h2>
                     <p>
-                        GPX Utils does not knowingly collect any information
-                        from anyone, including children under the age of 13.
+                        GPX Utils is not directed at children under the age of
+                        13 and does not knowingly collect information from
+                        them.
                     </p>
                 </section>
 
